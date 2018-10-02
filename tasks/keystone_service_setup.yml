@@ -61,7 +61,7 @@
   no_log: true
   register: add_service
   until: add_service|success
-  retries: 5
+  retries: 15
   delay: 10
 
 # Add the default user role
