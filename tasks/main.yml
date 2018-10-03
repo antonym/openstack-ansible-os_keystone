@@ -122,6 +122,10 @@
 - name: Flush handlers
   meta: flush_handlers
 
+- include: keystone_memcache_flush.yml
+  tags:
+    - keystone-config
+
 - include: keystone_service_setup.yml
   when:
     - keystone_service_setup | bool
